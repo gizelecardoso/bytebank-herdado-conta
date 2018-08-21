@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * 
  * Classe que representa um cliente do bytebank
@@ -7,11 +9,11 @@ package br.com.bytebank.banco.modelo;
  * @author Gisele
  *@version 0.1
  */
-public class Cliente {
+public class Cliente implements Serializable{
 	
 	private String nome;
 	private String cpf;
-	private String profissão;
+	private String profissao;
 	
 	public String getNome() {
 		return nome;
@@ -29,12 +31,12 @@ public class Cliente {
 		this.cpf = cpf;
 	}
 	
-	public String getProfissão() {
-		return profissão;
+	public String getProfissao() {
+		return profissao;
 	}
 	
-	public void setProfissão(String profissão) {
-		this.profissão = profissão;
+	public void setProfissao(String profissao) {
+		this.profissao = profissao;
 	}
 
 }
